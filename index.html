@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Clone</title>
+
+    <!-- font file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- cdn file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- css file -->
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <i class="ri-menu-line"></i>
+
+        <div class="logo">
+          <div class="logo-img">
+            <img src="img/logo/youtube-logo-png-2061.png" alt="youtube logo" />
+          </div>
+          <h1 id="logo-txt">YouTube</h1>
+        </div>
+      </div>
+
+      <div class="search-container">
+        <form action="">
+          <input type="text" placeholder="Search" />
+        </form>
+
+        <button class="search">
+          <i class="ri-search-line"></i>
+        </button>
+        <button class="mic">
+          <i class="ri-mic-fill"></i>
+        </button>
+      </div>
+
+      <div class="profile-container">
+        <i class="ri-video-add-line"></i>
+        <i class="ri-notification-4-line"></i>
+
+        <div class="profile-box">
+          <img
+            src="img/logo/my-chaneel.jpeg"
+            alt="profile my youtube channel"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- sidebar -->
+    <nav class="sidebar-container">
+      <div class="sidebar">
+        <div class="sidebar-items">
+          <a href="#" class="sidebar-item">
+            <i class="ri-home-5-line"></i>
+            Homek
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-wireless-charging-line"></i>
+            Shorts
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-rss-line"></i>
+            Subscriptions
+          </a>
+          <hr />
+
+          <a href="#" class="sidebar-item">
+            You
+            <i class="ri-arrow-right-s-line"></i>
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-account-box-line"></i>
+            Your channel
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-history-line"></i>
+            History
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-video-line"></i>
+            Your videos
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-time-line"></i>
+            Watch later
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-arrow-down-s-line"></i>
+            Show more
+          </a>
+          <hr />
+
+          <h3 class="more">Subscriptions</h3>
+          <a href="#" class="sidebar-item">
+            <img src="img/logo/channel-4.jpeg" />
+            <p>Brian Ruiz</p>
+          </a>
+          <a href="#" class="sidebar-item">
+            <img src="img/logo/Subscriptions-1.jpeg" />
+            <p>CS50</p>
+          </a>
+          <a href="#" class="sidebar-item">
+            <img src="img/logo/channel-6.jpg" />
+            <p>Fireship</p>
+          </a>
+          <a href="#" class="sidebar-item">
+            <img src="img/logo/channel-9.jpeg" />
+            <p>SuperSimpleDev</p>
+          </a>
+          <a href="#" class="sidebar-item">
+            <img src="img/logo/channel-12.jpeg" />
+            <p>ThePrimeagen</p>
+          </a>
+          <a href="#" class="sidebar-item">
+            <img src="img/logo/Subscriptions-2.jpg" />
+            <p>Web Dev Simplified</p>
+          </a>
+          <a href="#" class="sidebar-item">
+            <img src="img/logo/channel-2.jpg" />
+            <p>Marques Brownlee</p>
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-arrow-down-s-line"></i>
+            Show 10 more
+          </a>
+          <hr />
+
+          <h3 class="more">Explore</h3>
+          <a href="#" class="sidebar-item">
+            <i class="ri-home-5-line"></i>
+            Trending
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-music-line"></i>
+            Music
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-clapperboard-line"></i>
+            Movies & TV
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-live-line"></i>
+            Live
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-gamepad-line"></i>
+            Gaming
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-file-4-line"></i>
+            News
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-award-line"></i>
+            Sports
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-lightbulb-line"></i>
+            Learning
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-signal-tower-line"></i>
+            Podcast
+          </a>
+          <hr />
+
+          <h3 class="more">More from YouTube</h3>
+          <a href="#" class="sidebar-item">
+            <i class="ri-settings-5-line"></i>
+            Settings
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-flag-line"></i>
+            Report history
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-question-line"></i>
+            Help
+          </a>
+          <a href="#" class="sidebar-item">
+            <i class="ri-feedback-line"></i>
+            Send feedback
+          </a>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <main class="content">
+        <div class="chips-wrapper">
+          <div class="left-main">
+            <h2 id="title">
+              <span>Latest</span>
+            </h2>
+          </div>
+
+          <div class="right-main">
+            <div class="text-right-main">Manage</div>
+
+            <div class="grid-icon">
+              <i class="ri-grid-fill"></i>
+            </div>
+            <div class="list-icon">
+              <i class="ri-list-check"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- video-content -->
+        <div class="video-container">
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/8mAITcNt710?feature=shared"
+                class="video-box"
+              >
+                <img
+                  src="img/background/thumbnail-1.jpg"
+                  alt="timeline of photo"
+                />
+                <div class="video-time">24:51:37</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-1.jpg" alt="logo of video" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    Harvard CS50 – Full Computer Science University Course
+                  </h3>
+
+                  <div class="channel-name">FreecodeCamp.org</div>
+
+                  <div class="views-upload">
+                    <div class="views">10M views &#8226;</div>
+                    <div class="upload">1 year ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/OFvXuyITwBI?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-2.jpg" />
+
+                <div class="video-time">20:10</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-2.jpg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">Apple Vision Pro Impressions!</h3>
+
+                  <div class="channel-name">Marques Brownlee</div>
+
+                  <div class="views-upload">
+                    <div class="views">17M views &#8226;</div>
+                    <div class="upload">11 months ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                class="video-box"
+                href="https://youtu.be/sTeoEFzVNSc?feature=shared"
+              >
+                <img src="img/background/thumbnail-3.jpg" />
+
+                <div class="video-time">28:12</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-3.jpeg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    ChatGPT Tutorial for Developers - 38 Ways to 10x Your
+                    Productivity
+                  </h3>
+
+                  <div class="channel-name">Programming with Mosh</div>
+
+                  <div class="views-upload">
+                    <div class="views">3.4M views &#8226;</div>
+                    <div class="upload">11 months ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                class="video-box"
+                href="https://youtu.be/ssX0B6sg_BQ?feature=shared"
+              >
+                <img src="img/background/thumbnail-4.jpg" />
+
+                <div class="video-time">14:09</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-4.jpeg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    Office Tour | A Day in the Life of a Software Engineer
+                  </h3>
+
+                  <div class="channel-name">Brian Ruiz</div>
+
+                  <div class="views-upload">
+                    <div class="views">1.4M views &#8226;</div>
+                    <div class="upload">11 months ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                class="video-box"
+                href="https://youtu.be/UHyX9zBluMw?feature=shared"
+              >
+                <img src="img/background/thumbnail-5.jpg" />
+
+                <div class="video-time">6:23</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-5.jpg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    Day in the Life of a Software Engineer at TikTok (Seattle)
+                  </h3>
+
+                  <div class="channel-name">Arman Khondker</div>
+
+                  <div class="views-upload">
+                    <div class="views">1M views &#8226;</div>
+                    <div class="upload">8 months ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                class="video-box"
+                href="https://youtu.be/9T_wv6D8PYo?feature=shared"
+              >
+                <img src="img/background/thumbnail-6.jpg" />
+
+                <div class="video-time">3:52</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-6.jpg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    the ChatGPT store is about to launch… let’s get
+                  </h3>
+
+                  <div class="channel-name">Fireship</div>
+
+                  <div class="views-upload">
+                    <div class="views">1M views &#8226;</div>
+                    <div class="upload">12 days ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/wcTzlJi2Oz4?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-7.jpg" />
+
+                <div class="video-time">7:28</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-7.jpg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    Shadcn UI Crash Course #1 - Introduction & Setup
+                  </h3>
+
+                  <div class="channel-name">Net Ninja</div>
+
+                  <div class="views-upload">
+                    <div class="views">34K views &#8226;</div>
+                    <div class="upload">2 months ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/4BibQ69MD8c?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-8.jpg" />
+
+                <div class="video-time">34:28</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-8.jpeg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    Azure DevOps Tutorial for Beginners | CI/CD with Azure
+                    Pipelines
+                  </h3>
+
+                  <div class="channel-name">TechWorld with Nana</div>
+
+                  <div class="views-upload">
+                    <div class="views">929K views &#8226;</div>
+                    <div class="upload">1 years ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/G3e-cpL7ofc?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-9.jpg" />
+
+                <div class="video-time">6:31:23</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-9.jpeg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    HTML & CSS Full Course - Beginner to Pro 8M views
+                  </h3>
+
+                  <div class="channel-name">SuperSimpleDev</div>
+
+                  <div class="views-upload">
+                    <div class="views">8M views &#8226;</div>
+                    <div class="upload">1 year ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/ZbX4Ok9YX94?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-10.jpg" />
+
+                <div class="video-time">11:46:02</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-10.jpg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    Fullstack Discord Clone: Next.js 13, React, Socket.io,
+                    Prisma, Tailwind, MySQL | Full Course 2023
+                  </h3>
+
+                  <div class="channel-name">code with Antonio</div>
+
+                  <div class="views-upload">
+                    <div class="views">537K views &#8226;</div>
+                    <div class="upload">4 months ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/zgGhzuBZOQg?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-11.jpg" />
+
+                <div class="video-time">5:41:31</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-11.jpg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    Build and Deploy a Full Stack Next 14 MERN Events App with
+                    Stripe, Typescript, Tailwind
+                  </h3>
+
+                  <div class="channel-name">javaScript Mastery</div>
+
+                  <div class="views-upload">
+                    <div class="views">110K views &#8226;</div>
+                    <div class="upload">1 months ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/X6AR2RMB5tE?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-12..jpg" />
+
+                <div class="video-time">12:23</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-12.jpeg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">Vim As Your Editor - Introduction</h3>
+
+                  <div class="channel-name">ThePrimeagen</div>
+
+                  <div class="views-upload">
+                    <div class="views">586K views &#8226;</div>
+                    <div class="upload">1 year ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/CF1tMjvHDRA?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-13.jpg" />
+
+                <div class="video-time">10:41</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-13.jpg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    How To Make Your Boring Mac Terminal So Much Better
+                  </h3>
+
+                  <div class="channel-name">Josean Martinez</div>
+
+                  <div class="views-upload">
+                    <div class="views">566K views &#8226;</div>
+                    <div class="upload">1 year ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/dqlO6_5rZSQ?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-14.jpg" />
+
+                <div class="video-time">7:01</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-14.jpeg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    I tried 50 Programming Courses. Here are Top 5.
+                  </h3>
+
+                  <div class="channel-name">Sahil & Sarra</div>
+
+                  <div class="views-upload">
+                    <div class="views">1.4M views &#8226;</div>
+                    <div class="upload">5 months ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/jjMbPt_H3RQ?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-15.jpg" />
+
+                <div class="video-time">9:22</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-15.jpg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">Enums considered harmful</h3>
+
+                  <div class="channel-name">Matt Pocock</div>
+
+                  <div class="views-upload">
+                    <div class="views">169K views &#8226;</div>
+                    <div class="upload">1 year ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="video-content-cover">
+            <div class="video-content">
+              <a
+                href="https://youtu.be/HbBMp6yUXO0?feature=shared"
+                class="video-box"
+              >
+                <img src="img/background/thumbnail-16..jpg" />
+
+                <div class="video-time">49:24</div>
+              </a>
+
+              <div class="video-details">
+                <div class="channel-logo">
+                  <img src="img/logo/channel-16.jpg" />
+                </div>
+
+                <div class="detail">
+                  <h3 class="title">
+                    Responsive navbar tutorial using HTML CSS & JS
+                  </h3>
+
+                  <div class="channel-name">Kevin Powell</div>
+
+                  <div class="views-upload">
+                    <div class="views">960K views &#8226;</div>
+                    <div class="upload">2 year ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </nav>
+  </body>
+</html>

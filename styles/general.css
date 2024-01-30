@@ -1,0 +1,57 @@
+/*
+- Font sizes (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+- Spacing system (px)
+  2 / 4 / 6 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #fff;
+  padding-top: 12px;
+  margin-left: 20px;
+  margin-bottom: 4px;
+}
+
+i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+p,
+a {
+  font-size: 0.9rem;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 12px 0;
+}
+
+/* scrollbar style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 5px;
+}

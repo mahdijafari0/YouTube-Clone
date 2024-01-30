@@ -1,0 +1,153 @@
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 70px;
+    overflow-x: hidden;
+  }
+
+  .video-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .more {
+    display: none;
+  }
+
+  .content {
+    width: calc(100vw - 70px);
+  }
+
+  .ri-arrow-right-s-line {
+    display: none;
+  }
+}
+
+@media (max-width: 1600px) {
+  .video-box {
+    width: auto;
+    height: 168px;
+  }
+}
+
+@media (max-width: 1499px) {
+  .video-box {
+    width: auto;
+    height: 150px;
+  }
+}
+
+@media (max-width: 1455px) {
+  .video-box {
+    width: auto;
+    height: 150px;
+  }
+}
+
+@media (max-width: 1405px) {
+  .video-box {
+    width: auto;
+    height: 145px;
+  }
+}
+
+@media (max-width: 1343px) {
+  .video-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .video-box {
+    width: auto;
+    height: 168px;
+  }
+}
+
+@media (max-width: 1076px) {
+  .video-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .search-container,
+  .ri-grid-fill {
+    display: none;
+  }
+
+  .video-box {
+    width: auto;
+    height: 150px;
+  }
+}
+
+@media (max-width: 945px) {
+  .video-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .video-box {
+    width: auto;
+    height: 145px;
+  }
+}
+
+@media (max-width: 885px) {
+  .video-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 755px) {
+  .video-box {
+    width: auto;
+    height: 145px;
+  }
+}
+
+@media (max-width: 615px) {
+  .video-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .video-box {
+    width: auto;
+    height: 250px;
+  }
+
+  .search-container,
+  .ri-grid-fill {
+    display: none;
+  }
+
+  .video-container {
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .header {
+    padding-right: 10px;
+  }
+
+  @media (max-width: 530px) {
+    .video-box {
+      width: auto;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 455px) {
+    .video-box {
+      width: auto;
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .video-box {
+      width: auto;
+      height: 175px;
+    }
+  }
+  @media (max-width: 403px) {
+    .video-box {
+      width: auto;
+      height: 145px;
+    }
+  }
+}
